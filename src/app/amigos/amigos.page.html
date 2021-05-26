@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Amigos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let item of amigos">
+    <ion-item id="linha_item.id" (click)="presentActionSheet(item.index)">{{item.nome}} - {{item.idade}} - {{item.nivel_amizade}}</ion-item>
+  </ion-list>
+</ion-content>

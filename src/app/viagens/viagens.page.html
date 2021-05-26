@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Viagens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let local of locais">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{local.local}}</ion-card-subtitle>
+      <ion-card-title>{{local.descricao}}</ion-card-title>
+      <ion-card-title>{{local.visita}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img src="{{local.imagem}}">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
